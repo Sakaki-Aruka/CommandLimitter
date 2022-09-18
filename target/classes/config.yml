@@ -1,0 +1,8 @@
+freePlayers: "notch"
+limitCommands:
+  all: "/wtp world"
+  pattern: "/storage"
+
+blocks: "DIAMOND_ORE,DEEPSLATE_DIAMOND_ORE"
+warnMessages: "This command was denied.!&!You cannot use."
+unlockMessages: "unlocked the limit that to use commands.!&!foo~"

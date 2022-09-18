@@ -1,0 +1,16 @@
+name: CommandLimit
+version: '${project.version}'
+main: commandlimit.commandlimit.CommandLimit
+api-version: 1.19
+authors: [ SakakiAruka ]
+description: commands limit plugin (for spigot ver 1.19.2 ~
+website: https://github.com/Sakaki-Aruka
+commands:
+  commandlimitreload:
+    permission: commandlimit.op
+  limitedit:
+    permission: commandlimit.op
+
+permissions:
+  commandlimit.op:
+    default: op
