@@ -10,10 +10,6 @@ import static commandlimit.commandlimit.SettingsLoad.*;
 
 public class PreProcess {
     public void preProcessMain(PlayerCommandPreprocessEvent event){
-
-        //debug
-        event.getPlayer().sendMessage("ct:"+new ArrayList<String>(Arrays.asList(event.getMessage())).get(0));
-
         for(String loop : limitCommandsAll){
             this.sub(event,loop,true);
         }
@@ -24,9 +20,6 @@ public class PreProcess {
 
     public void sub(PlayerCommandPreprocessEvent event,String loop,boolean all){
         if((event.getMessage().equalsIgnoreCase(loop) && all) || (event.getMessage().contains(loop) && !all)){
-
-            //debug
-            event.getPlayer().sendMessage("contains");
 
             if(!(freePlayers.contains(event.getPlayer().getName()))){
                 event.setCancelled(true);
